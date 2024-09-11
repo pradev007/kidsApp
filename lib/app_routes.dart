@@ -1,5 +1,6 @@
-import 'package:color_app/shape_screen/shape_page.dart';
+import 'package:color_app/shape_gallery_screen/screen/shape_gallery_screen.dart';
 import 'package:go_router/go_router.dart';
+
 import 'Home Screen/paintCategories/bird_page.dart';
 import 'Home Screen/paintCategories/elephant_page.dart';
 import 'Home Screen/paintCategories/horse_page.dart';
@@ -74,9 +75,9 @@ class AppRoutes {
         builder: (context, state) => const NumberPage(),
       ),
       GoRoute(
-        path: '/shape-screen',
-        name: "shape-screen",
-        builder: (context, state) => const ShapePage(),
+        path: '/shape-gallery',
+        name: "shape-gallery",
+        builder: (context, state) => const ShapeGalleryScreen(),
       ),
     ],
   );

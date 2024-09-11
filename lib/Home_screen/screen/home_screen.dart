@@ -16,11 +16,14 @@ class HomeScreen extends StatelessWidget {
           mainAxisSpacing: 1,
           crossAxisSpacing: 0,
           children: [
-            const StaggeredTile(
+             StaggeredTile(
               crossAxisCellCount: 2,
               mainAxisCellCount: 1,
               image: "assets/cover.png",
               cardColor: Colors.pink,
+              onTap: (){
+                context.pushNamed('shape-gallery');
+              },
             ),
             // Art page
 
