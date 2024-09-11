@@ -1,9 +1,10 @@
-import 'package:colorapp/custom/Image%20Details/image_detail_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
-class customArtTile extends StatelessWidget {
-  const customArtTile({
+import 'Image Details/image_detail_page.dart';
+
+class CustomArtTile extends StatelessWidget {
+  const CustomArtTile({
     super.key,
     required this.context,
     required this.imageName,

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_drawing_board/flutter_drawing_board.dart';
 import 'package:flutter_colorpicker/flutter_colorpicker.dart';
-import 'package:flutter_drawing_board/paint_contents.dart';
+import 'package:flutter_drawing_board/flutter_drawing_board.dart';
 
 class ImageDetailPage extends StatefulWidget {
   final String imagePath;

@@ -1,9 +1,8 @@
-import 'package:colorapp/route/configuration.dart';
-import 'package:colorapp/screens/ArtCategories/horse_page.dart';
-import 'package:colorapp/screens/HomeScreen/home_page.dart';
+import 'package:color_app/app_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:go_router/go_router.dart';
+
+import 'app_routes.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -24,7 +23,7 @@ class _MyAppState extends State<MyApp> {
   Widget build(BuildContext context) {
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      routerConfig: goRouter,
+      routerConfig: AppRoutes.router,
     );
   }
 }
