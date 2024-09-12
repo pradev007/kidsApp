@@ -79,6 +79,7 @@ flutter:
     - assets/categories/
     - assets/shapes/
     - assets/sounds/
+    - assets/letters/
 
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg

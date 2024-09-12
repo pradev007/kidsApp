@@ -16,13 +16,13 @@ class HomeScreen extends StatelessWidget {
           mainAxisSpacing: 1,
           crossAxisSpacing: 0,
           children: [
-             StaggeredTile(
+            StaggeredTile(
               crossAxisCellCount: 2,
               mainAxisCellCount: 1,
               image: "assets/cover.png",
               cardColor: Colors.pink,
-              onTap: (){
-                context.pushNamed('shape-gallery');
+              onTap: () {
+                // context.pushNamed('shape-gallery');
               },
             ),
             // Art page
@@ -33,7 +33,7 @@ class HomeScreen extends StatelessWidget {
               image: "assets/paint.png",
               cardColor: Colors.amber,
               boxFit: BoxFit.fill,
-              onTap: () => context.push('/categoriesPage'),
+              onTap: () => context.pushNamed('art-categories-screen'),
               splashColor: Colors.purple,
             ),
             // Shape page
@@ -43,14 +43,14 @@ class HomeScreen extends StatelessWidget {
               mainAxisCellCount: 2,
               image: "assets/shapes.png",
               cardColor: Colors.blueAccent,
-              onTap: () => context.push('/shapePage'),
+              onTap: () => context.pushNamed('learn-shape-gallery'),
             ),
             StaggeredTile(
               crossAxisCellCount: 1,
               mainAxisCellCount: 2,
               image: "assets/number.png",
               cardColor: Colors.greenAccent,
-              onTap: () => context.push('/numberPage'),
+              onTap: () => context.pushNamed('learn-number-screen'),
               boxFit: BoxFit.cover,
             ),
             StaggeredTile(
@@ -59,7 +59,7 @@ class HomeScreen extends StatelessWidget {
               image: "assets/color.png",
               cardColor: Colors.deepPurple,
               boxFit: BoxFit.fill,
-              onTap: () => context.push('/colorPage'),
+              onTap: () => context.pushNamed('learn-color-screen'),
             ),
             StaggeredTile(
               crossAxisCellCount: 1,
@@ -67,7 +67,7 @@ class HomeScreen extends StatelessWidget {
               image: "assets/animal.png",
               cardColor: Colors.amber,
               boxFit: BoxFit.contain,
-              onTap: () => context.push('/animalPage'),
+              onTap: () => context.pushNamed('learn-animal-screen'),
             ),
             StaggeredTile(
               crossAxisCellCount: 1,
@@ -75,7 +75,7 @@ class HomeScreen extends StatelessWidget {
               image: "assets/alpha.jpg",
               cardColor: Colors.pink,
               boxFit: BoxFit.fitWidth,
-              onTap: () => context.push('/alphabetPage'),
+              onTap: () => context.pushNamed('learn-letter-screen'),
             ),
           ],
         ),
