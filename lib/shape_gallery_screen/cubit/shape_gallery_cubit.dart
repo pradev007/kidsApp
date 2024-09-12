@@ -16,10 +16,11 @@ class ShapeGalleryCubit extends Cubit<ShapeGalleryState> {
               'circle.gif',
               'cube.gif',
             ],
+            soundNameList: ['sounds/square.mp3']
           ),
         );
 
-  Future<void> playAudio() async {
-    audioPlayer.play(AssetSource('sounds/square.mp3'));
+  Future<void> playAudio({required String soundName}) async {
+    audioPlayer.play(AssetSource(soundName));
   }
 }
