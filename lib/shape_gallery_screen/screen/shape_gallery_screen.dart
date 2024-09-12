@@ -36,7 +36,6 @@ class ShapeGalleryScreen extends StatelessWidget {
                     child: GestureDetector(
                       onTap: () {
                         if (index == state.shapeImageList.length - 1) {
-                          print("object");
                           context.read<ShapeGalleryCubit>().playAudio();
                         }
                       },

@@ -26,10 +26,7 @@ class HomeScreen extends StatelessWidget {
               },
             ),
             // Art page
-
             StaggeredTile(
-              crossAxisCellCount: 1,
-              mainAxisCellCount: 1,
               image: "assets/paint.png",
               cardColor: Colors.amber,
               boxFit: BoxFit.fill,
@@ -54,24 +51,17 @@ class HomeScreen extends StatelessWidget {
               boxFit: BoxFit.cover,
             ),
             StaggeredTile(
-              crossAxisCellCount: 1,
-              mainAxisCellCount: 1,
               image: "assets/color.png",
               cardColor: Colors.deepPurple,
               boxFit: BoxFit.fill,
               onTap: () => context.push('/colorPage'),
             ),
             StaggeredTile(
-              crossAxisCellCount: 1,
-              mainAxisCellCount: 1,
               image: "assets/animal.png",
               cardColor: Colors.amber,
-              boxFit: BoxFit.contain,
               onTap: () => context.push('/animalPage'),
             ),
             StaggeredTile(
-              crossAxisCellCount: 1,
-              mainAxisCellCount: 1,
               image: "assets/alpha.jpg",
               cardColor: Colors.pink,
               boxFit: BoxFit.fitWidth,
