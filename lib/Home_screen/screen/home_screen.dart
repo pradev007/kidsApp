@@ -21,15 +21,12 @@ class HomeScreen extends StatelessWidget {
               mainAxisCellCount: 1,
               image: "assets/cover.png",
               cardColor: Colors.pink,
-              onTap: () {
-                // context.pushNamed('shape-gallery');
+              onTap: (){
+                context.pushNamed('shape-gallery');
               },
             ),
             // Art page
-
             StaggeredTile(
-              crossAxisCellCount: 1,
-              mainAxisCellCount: 1,
               image: "assets/paint.png",
               cardColor: Colors.amber,
               boxFit: BoxFit.fill,
@@ -54,24 +51,18 @@ class HomeScreen extends StatelessWidget {
               boxFit: BoxFit.cover,
             ),
             StaggeredTile(
-              crossAxisCellCount: 1,
-              mainAxisCellCount: 1,
               image: "assets/color.png",
               cardColor: Colors.deepPurple,
               boxFit: BoxFit.fill,
               onTap: () => context.pushNamed('learn-color-screen'),
             ),
             StaggeredTile(
-              crossAxisCellCount: 1,
-              mainAxisCellCount: 1,
               image: "assets/animal.png",
               cardColor: Colors.amber,
               boxFit: BoxFit.contain,
               onTap: () => context.pushNamed('learn-animal-screen'),
             ),
             StaggeredTile(
-              crossAxisCellCount: 1,
-              mainAxisCellCount: 1,
               image: "assets/alpha.jpg",
               cardColor: Colors.pink,
               boxFit: BoxFit.fitWidth,

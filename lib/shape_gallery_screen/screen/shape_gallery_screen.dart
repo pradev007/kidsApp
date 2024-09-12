@@ -13,12 +13,11 @@ class ShapeGalleryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(
+      appBar: CustomAppBar(
         title: "Shape Page",
-        // onTap: () {
-        //   context.pop();
-        // },
-        // iconColor: Colors.black,
+        onTap: () {
+          context.pop();
+        },
       ),
       body: BlocProvider(
         create: (context) => sl<ShapeGalleryCubit>(),
@@ -29,27 +28,23 @@ class ShapeGalleryScreen extends StatelessWidget {
                 crossAxisCount: 4,
                 crossAxisSpacing: 4,
                 mainAxisSpacing: 5,
-                children: List.generate(
-                  state.shapeImageList.length,
-                  (index) {
-                    final shape = state.shapeImageList[index];
-                    return StaggeredGridTile.count(
-                      crossAxisCellCount: 2,
-                      mainAxisCellCount: 2,
-                      child: GestureDetector(
-                        onTap: () {
-                          if (index == state.shapeImageList.length - 1) {
-                            print("object");
-                            context.read<ShapeGalleryCubit>().playAudio();
-                          }
-                        },
-                        child: Card(
-                          child: Image.asset('assets/shapes/$shape'),
-                        ),
+                children: List.generate(state.shapeImageList.length, (index) {
+                  final shape = state.shapeImageList[index];
+                  return StaggeredGridTile.count(
+                    crossAxisCellCount: 2,
+                    mainAxisCellCount: 2,
+                    child: GestureDetector(
+                      onTap: () {
+                        if (index == state.shapeImageList.length - 1) {
+                          context.read<ShapeGalleryCubit>().playAudio();
+                        }
+                      },
+                      child: Card(
+                        child: Image.asset('assets/shapes/$shape'),
                       ),
-                    );
-                  },
-                ),
+                    ),
+                  );
+                }),
                 // children: [
                 //   StaggeredGridTile.count(
                 //     crossAxisCellCount: 2,
