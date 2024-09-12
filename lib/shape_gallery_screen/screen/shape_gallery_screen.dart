@@ -36,56 +36,18 @@ class ShapeGalleryScreen extends StatelessWidget {
                     child: GestureDetector(
                       onTap: () {
                         if (index == state.shapeImageList.length - 1) {
-                          context.read<ShapeGalleryCubit>().playAudio();
-                        }
+                            context
+                                .read<ShapeGalleryCubit>()
+                                .playAudio(soundName: "sounds/square.mp3");
+                          }
                       },
                       child: Card(
                         child: Image.asset('assets/shapes/$shape'),
                       ),
                     ),
                   );
-                }),
-                // children: [
-                //   StaggeredGridTile.count(
-                //     crossAxisCellCount: 2,
-                //     mainAxisCellCount: 2,
-                //     child: Card(
-                //       child: Image.asset('assets/shapes/square.gif'),
-                //     ),
-                //   ),
-                //   StaggeredGridTile.count(
-                //     crossAxisCellCount: 2,
-                //     mainAxisCellCount: 2,
-                //     child: InkWell(
-                //       onTap: () {},
-                //       child: Card(
-                //         child: Image.asset('assets/shapes/triangle.gif'),
-                //       ),
-                //     ),
-                //   ),
-                //   StaggeredGridTile.count(
-                //     crossAxisCellCount: 2,
-                //     mainAxisCellCount: 2,
-                //     child: InkWell(
-                //       onTap: () {},
-                //       child: Card(
-                //         child: Image.asset('assets/shapes/circle.gif'),
-                //       ),
-                //     ),
-                //   ),
-                //   StaggeredGridTile.count(
-                //     crossAxisCellCount: 2,
-                //     mainAxisCellCount: 2,
-                //     child: InkWell(
-                //       onTap: () {
-                //         playAudio();
-                //       },
-                //       child: Card(
-                //         child: Image.asset('assets/shapes/cube.gif'),
-                //       ),
-                //     ),
-                //   ),
-                // ],
+                  },
+                ),
               ),
             );
           },

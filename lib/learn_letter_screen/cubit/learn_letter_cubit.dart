@@ -1,16 +1,13 @@
-import 'package:audioplayers/audioplayers.dart';
 import 'package:equatable/equatable.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 part 'learn_letter_state.dart';
 
 class LearnLetterCubit extends Cubit<LearnLetterState> {
-  final audioPlayer = AudioPlayer();
-
   LearnLetterCubit()
       : super(
           const LearnLetterState(
-            letterName: [
+            letterNameList: [
               'A.png',
               'B.jpg',
               'C.jpg',
@@ -40,7 +37,4 @@ class LearnLetterCubit extends Cubit<LearnLetterState> {
             ],
           ),
         );
-  Future<void> playAudio() async {
-    audioPlayer.play(AssetSource('sounds/square.mp3'));
-  }
 }
