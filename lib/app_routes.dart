@@ -1,17 +1,17 @@
+import 'package:color_app/art_category/art_bird_screen.dart';
+import 'package:color_app/art_category/art_elephant_screen.dart';
+import 'package:color_app/art_category/art_horse_screen.dart';
+import 'package:color_app/art_category/art_rabbit_screen.dart';
+import 'package:color_app/learn_color_screen/learn_color_screen.dart';
+import 'package:color_app/learn_letter_screen/screen/learn_letter_screen.dart';
 import 'package:color_app/shape_gallery_screen/screen/shape_gallery_screen.dart';
 import 'package:go_router/go_router.dart';
 
-import 'Home Screen/paintCategories/bird_page.dart';
-import 'Home Screen/paintCategories/elephant_page.dart';
-import 'Home Screen/paintCategories/horse_page.dart';
-import 'Home Screen/paintCategories/rabbit_page.dart';
 import 'Home_screen/screen/home_screen.dart';
-import 'alphabet_screen/alphabet_page.dart';
-import 'animal_screen/animal_page.dart';
-import 'art_category/categories_page.dart';
-import 'color_screen/color_page.dart';
+import 'learn_animal_screen/learn_animal_screen.dart';
+import 'art_category/art_categories_screen.dart';
 import 'custom/Image Details/image_detail_page.dart';
-import 'number_screen/number_page.dart';
+import 'learn_number_screen/learn_number_screen.dart';
 
 class AppRoutes {
   static final GoRouter router = GoRouter(
@@ -23,24 +23,24 @@ class AppRoutes {
         builder: (context, state) => const HomeScreen(),
       ),
       GoRoute(
-        path: '/horse-screen',
-        name: 'horse-screen',
-        builder: (context, state) => const HorsePage(),
+        path: '/art-horse-screen',
+        name: 'art-horse-screen',
+        builder: (context, state) => const ArtHorseScreen(),
       ),
       GoRoute(
-        path: '/rabbit-screen',
-        name: 'rabbit-screen',
-        builder: (context, state) => const RabbitPage(),
+        path: '/art-rabbit-screen',
+        name: 'art-rabbit-screen',
+        builder: (context, state) => const ArtRabbitScreen(),
       ),
       GoRoute(
-        path: '/elephant-screen',
-        name: 'elephant-screen',
-        builder: (context, state) => const ElephantPage(),
+        path: '/art-elephant-screen',
+        name: 'art-elephant-screen',
+        builder: (context, state) => const ArtElephantScreen(),
       ),
       GoRoute(
-        path: '/bird-screen',
-        name: 'bird-screen',
-        builder: (context, state) => const BirdPage(),
+        path: '/art-bird-screen',
+        name: 'art-bird-screen',
+        builder: (context, state) => const ArtBirdScreen(),
       ),
       GoRoute(
         path: '/image-detail-screen',
@@ -50,33 +50,33 @@ class AppRoutes {
         ),
       ),
       GoRoute(
-        path: '/alphabet-screen',
-        name: "alphabet-screen",
-        builder: (context, state) => const AlphabetPage(),
+        path: '/learn-letter-screen',
+        name: "learn-letter-screen",
+        builder: (context, state) => const LearnLetterScreen(),
       ),
       GoRoute(
-        path: '/categories-screen',
-        name: "categories-screen",
-        builder: (context, state) => const CategoriesPage(),
+        path: '/art-categories-screen',
+        name: "art-categories-screen",
+        builder: (context, state) => const ArtCategoriesScreen(),
       ),
       GoRoute(
-        path: '/animal-screen',
-        name: "animal-screen",
-        builder: (context, state) => const AnimalPage(),
+        path: '/learn-animal-screen',
+        name: "learn-animal-screen",
+        builder: (context, state) => const LearnAnimalScreen(),
       ),
       GoRoute(
-        path: '/color-screen',
-        name: "color-screen",
-        builder: (context, state) => const ColorPage(),
+        path: '/learn-color-screen',
+        name: "learn-color-screen",
+        builder: (context, state) => const LearnColorScreen(),
       ),
       GoRoute(
-        path: '/number-screen',
-        name: "number-screen",
-        builder: (context, state) => const NumberPage(),
+        path: '/learn-number-screen',
+        name: "learn-number-screen",
+        builder: (context, state) => const LearnNumberScreen(),
       ),
       GoRoute(
-        path: '/shape-gallery',
-        name: "shape-gallery",
+        path: '/learn-shape-gallery',
+        name: "learn-shape-gallery",
         builder: (context, state) => const ShapeGalleryScreen(),
       ),
     ],
