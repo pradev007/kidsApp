@@ -7,11 +7,11 @@ import 'package:color_app/learn_letter_screen/screen/learn_letter_screen.dart';
 import 'package:color_app/shape_gallery_screen/screen/shape_gallery_screen.dart';
 import 'package:go_router/go_router.dart';
 
-import 'Home_screen/screen/home_screen.dart';
+import 'home_screen/screen/home_screen.dart';
 import 'learn_animal_screen/learn_animal_screen.dart';
 import 'art_category/art_categories_screen.dart';
 import 'custom/Image Details/image_detail_page.dart';
-import 'learn_number_screen/learn_number_screen.dart';
+import 'learn_number_screen/screen/learn_number_screen.dart';
 
 class AppRoutes {
   static final GoRouter router = GoRouter(

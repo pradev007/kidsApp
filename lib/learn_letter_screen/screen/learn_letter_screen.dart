@@ -42,6 +42,9 @@ class LearnLetterScreen extends StatelessWidget {
                           mainAxisCellCount: 2,
                           child: GestureDetector(
                             onTap: () {
+                              context
+                                  .read<LearnLetterCubit>()
+                                  .selectedLetter(index);
                               if (index == state.letterNameList.length - 1) {
                                 context
                                     .read<ShapeGalleryCubit>()
@@ -49,7 +52,14 @@ class LearnLetterScreen extends StatelessWidget {
                               }
                             },
                             child: Card(
-                              child: Image.asset('assets/letters/$letter'),
+                              // shadowColor: Colors.amber,
+                              color: state.selectedIndex == index
+                                  ? Colors.red
+                                  : Colors.transparent,
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: Image.asset('assets/letters/$letter'),
+                              ),
                             ),
                           ),
                         );

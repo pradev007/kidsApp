@@ -35,6 +35,13 @@ class LearnLetterCubit extends Cubit<LearnLetterState> {
               'Y.jpg',
               'Z.jpg',
             ],
+            selectedIndex: -1,
           ),
         );
+  void selectedLetter(int index) {
+    emit(LearnLetterState(
+      letterNameList: state.letterNameList,
+      selectedIndex: index,
+    ));
+  }
 }

@@ -28,24 +28,26 @@ class ShapeGalleryScreen extends StatelessWidget {
                 crossAxisCount: 4,
                 crossAxisSpacing: 4,
                 mainAxisSpacing: 5,
-                children: List.generate(state.shapeImageList.length, (index) {
-                  final shape = state.shapeImageList[index];
-                  return StaggeredGridTile.count(
-                    crossAxisCellCount: 2,
-                    mainAxisCellCount: 2,
-                    child: GestureDetector(
-                      onTap: () {
-                        if (index == state.shapeImageList.length - 1) {
+                children: List.generate(
+                  state.shapeImageList.length,
+                  (index) {
+                    final shape = state.shapeImageList[index];
+                    return StaggeredGridTile.count(
+                      crossAxisCellCount: 2,
+                      mainAxisCellCount: 2,
+                      child: GestureDetector(
+                        onTap: () {
+                          if (index == state.shapeImageList.length - 1) {
                             context
                                 .read<ShapeGalleryCubit>()
                                 .playAudio(soundName: "sounds/square.mp3");
                           }
-                      },
-                      child: Card(
-                        child: Image.asset('assets/shapes/$shape'),
+                        },
+                        child: Card(
+                          child: Image.asset('assets/shapes/$shape'),
+                        ),
                       ),
-                    ),
-                  );
+                    );
                   },
                 ),
               ),
