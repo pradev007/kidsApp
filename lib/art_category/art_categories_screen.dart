@@ -29,8 +29,8 @@ class ArtCategoriesScreen extends StatelessWidget {
                 crossAxisCellCount: 1,
                 mainAxisCellCount: 1,
                 child: InkWell(
-                  onTap: () =>
-                      context.push('/horsePage'), // Use go_router navigation
+                  onTap: () => context.pushNamed(
+                      'art-horse-screen'), // Use go_router navigation
                   child: Image.asset("assets/categories/horse10.jpg",
                       fit: BoxFit.cover),
                 ),
@@ -42,8 +42,8 @@ class ArtCategoriesScreen extends StatelessWidget {
                 crossAxisCellCount: 1,
                 mainAxisCellCount: 1,
                 child: InkWell(
-                  onTap: () =>
-                      context.push('/rabbitPage'), // Use go_router navigation
+                  onTap: () => context.pushNamed(
+                      'art-rabbit-screen'), // Use go_router navigation
                   child: Image.asset("assets/categories/rabbit1.jpg",
                       fit: BoxFit.cover),
                 ),
@@ -53,8 +53,8 @@ class ArtCategoriesScreen extends StatelessWidget {
                 crossAxisCellCount: 1,
                 mainAxisCellCount: 1,
                 child: InkWell(
-                  onTap: () =>
-                      context.push('/elephantPage'), // Use go_router navigation
+                  onTap: () => context.pushNamed(
+                      'art-elephant-screen'), // Use go_router navigation
                   child: Image.asset("assets/categories/elephant1.jpg",
                       fit: BoxFit.cover),
                 ),
@@ -64,8 +64,8 @@ class ArtCategoriesScreen extends StatelessWidget {
                 crossAxisCellCount: 1,
                 mainAxisCellCount: 1,
                 child: InkWell(
-                  onTap: () =>
-                      context.push('/birdPage'), // Use go_router navigation
+                  onTap: () => context
+                      .pushNamed('art-bird-screen'), // Use go_router navigation
                   child: Image.asset("assets/categories/bird1.avif",
                       fit: BoxFit.cover),
                 ),
