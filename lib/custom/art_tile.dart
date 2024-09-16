@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
-import 'Image Details/image_detail_page.dart';
+import 'image_detail_page.dart';
 
 class CustomArtTile extends StatelessWidget {
   const CustomArtTile({
