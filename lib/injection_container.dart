@@ -1,3 +1,4 @@
+import 'package:color_app/learn_animal_screen/cubit/learn_animal_cubit.dart';
 import 'package:color_app/learn_letter_screen/cubit/learn_letter_cubit.dart';
 import 'package:color_app/learn_number_screen/cubit/learn_number_cubit.dart';
 import 'package:color_app/shape_gallery_screen/cubit/shape_gallery_cubit.dart';
@@ -10,4 +11,5 @@ Future<void> init() async {
   sl.registerFactory(() => LearnNumberCubit());
   sl.registerFactory(() => ShapeGalleryCubit());
   sl.registerFactory(() => LearnLetterCubit());
+  sl.registerFactory(() => LearnAnimalCubit());
 }

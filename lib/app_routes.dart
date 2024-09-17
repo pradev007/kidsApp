@@ -8,7 +8,7 @@ import 'package:color_app/shape_gallery_screen/screen/shape_gallery_screen.dart'
 import 'package:go_router/go_router.dart';
 
 import 'home_screen/screen/home_screen.dart';
-import 'learn_animal_screen/learn_animal_screen.dart';
+import 'learn_animal_screen/screen/learn_animal_screen.dart';
 import 'art_category/art_categories_screen.dart';
 import 'custom/image_detail_page.dart';
 import 'learn_number_screen/screen/learn_number_screen.dart';
